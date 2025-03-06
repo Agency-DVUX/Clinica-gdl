@@ -1,13 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Clinica</title>
-</head>
-<body>
-    <h1 class="text-6xl font-bold underline">Hola</h1>
-    <h2>hola mundo</h2>
-</body>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="bg-white flex justify-between items-center py-4">
+      <img src="./Public/clinicalogo.svg" alt="Logo de la empresa" class="w-100 h-100 ml-4" />
+      <nav>
+        <ul class="flex justify-end">
+          <li><a href="" class="mr-8">Inicio</a></li>
+          <li><a href="" class="mr-8">Servicios</a></li>
+          <li><a href="" class="mr-8">Testimonios</a></li>
+          <li><a href="" class="mr-8">Doctores</a></li>
+          <li><a href="" class="mr-8">Quienes Somos</a></li>
+          <li><a href="" class="mr-8">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main page-->
+     
+    <div class="flex justify-center items-center h-screen">
+      <div class="flex justify-between w-3/4">
+        <div class="w-1/2 flex flex-col justify-center">
+          <h1 class="text-3xl font-bold mb-4">
+            Clínica de Fracturas y Lesiones | Especialistas en Traumatología
+          </h1>
+          <p class="text-lg">
+            ¿Buscas una clínica de fracturas y lesiones confiable y especializada?, contamos con un equipo de especialistas en traumatología altamente capacitados, comprometidos con la ética y el profesionalismo en cada tratamiento.
+          </p>
+        </div>
+        <div class="w-1/2 flex justify-end mr-8">
+          <img src="./Public/image-xr.svg" alt="Imagen XR" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer main page-->
+    
+    <footer class="items-center py-4 bg-rgba(252, 252, 252, 1)">
+      <nav class="flex justify-between">
+        <ul class="flex flex-wrap justify-around w-full">
+          <li class="flex flex-col items-center mr-4">
+            <img src="./Public/icono-footer.svg" alt="" class="w-8 h-8 mb-2" />
+            <a href="">Consulta de traumatología y ortopedia</a>
+          </li>
+          <li class="flex flex-col items-center mr-4">
+            <img src="./Public/icono-footer.svg" alt="" class="w-8 h-8 mb-2" />
+            <a href="">Cirugía traumatológica</a>
+          </li>
+          <li class="flex flex-col items-center mr-4">
+            <img src="./Public/icono-footer.svg" alt="" class="w-8 h-8 mb-2" />
+            <a href="">Infiltraciones</a>
+          </li>
+          <li class="flex flex-col items-center mr-4">
+            <img src="./Public/icono-footer.svg" alt="" class="w-8 h-8 mb-2" />
+            <a href="">Férulas y yesos</a>
+          </li>
+          <li class="flex flex-col items-center mr-4">
+            <img src="./Public/icono-footer.svg" alt="" class="w-8 h-8 mb-2" />
+            <a href="">Curaciones</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+<!-- Testimonios -->
+<div class="flex justify-center items-center">
+  <div class="w-3/4 flex flex-col items-center">
+    <div class="flex justify-between items-center">
+      <div>
+        <h2>Testimonios</h2>
+        <p>¡Tu opinión importa!Cuéntanos cómo fue tu experiencia con nosotros. Tus comentarios nos ayudarán a seguir brindándote la mejor atención médica.</p>
+      </div>
+      <div class="w-1/2 flex justify-end mr-8">
+        <img src="./Public/v1.svg" alt="" class="w-full h-full object-cover">
+      </div>
+    </div>
+    <nav class="mt-4">
+      <ul class="flex flex-wrap">
+        <li class="mr-4"><a href="">Comentarios</a></li>
+        <li class="mr-4"><a href="">Comentarios</a></li>
+        <li class="mr-4"><a href="">Comentarios</a></li>
+        <li class="mr-4"><a href="">Comentarios</a></li>
+        <li class="mr-4"><a href="">Comentarios</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+    <!-- Especialistas cerca de tu domicilio -->
+
+    <!-- carrucel -->
+    <div class="relative w-full h-64 overflow-hidden">
+    <div class=class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+      <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="w-25 h-25 object-cover">
+      <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="w-25 h-25 object-cover hidden">
+      <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="w-25 h-25 object-cover hidden">
+      <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="w-25 h-25 object-cover hidden">
+      <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="w-25 h-25 object-cover hidden">
+    </div>
+  </div>
+    
+    <!-- nuestra especialidad -->
+    <h2>
+      Nuestra especialidad
+    </h2>
+    <p>
+      Somos especialistas en traumatología, te brindamos tratamientos personalizados y accesibles. Guiados por la mejor atención médica basada en la ética y el profesionalismo. Contamos con beneficios exclusivos para nuestros pacientes como descuentos, convenios con seguros, consultas en inglés y más.¡Contáctanos y pregunta por nuestros beneficios!
+    </p>
+    <h2>
+      Nuestra especialidad
+    </h2>
+    <h2>
+      Nuestra especialidad
+    </h2>
+    <h2>
+      Nuestra especialidad
+    </h2>
+
+
+    <!-- Footer Footer-->
+    <footer>
+      <div>
+        <img src="./Public/clinicalogo.svg" alt="Logo de la empresa" />
+        <nav>
+          <ul>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Testimonios</a></li>
+            <li><a href="">Doctores</a></li>
+            <li><a href="">Quienes Somos</a></li>
+          </ul>
+        </nav>
+        <section class="redes-sociales">
+          <a href="https://x.com" target="_blank">
+            <img src="./Public/twitter-xlogo.svg" alt="X" />
+          </a>
+          <a href="https://www.google.com" target="_blank">
+            <img src="./Public/googlelogo.svg" alt="Google" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./Public/facebooklogo.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.titok.com" target="_blank">
+            <img src="./Public/tiktoklogo.svg" alt="Tiktok" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="./Public/instagramlogo.svg" alt="Instagram" />
+          </a>
+        </section>
+      </div>
+      <small> © 2024 C Traumatologia. Todos los derechos reservados. </small>
+    </footer>
+  </body>
 </html>
