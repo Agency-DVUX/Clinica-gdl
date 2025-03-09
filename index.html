@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Clinica</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="./js/script.js"></script>
   </head>
   <body>
+    <div class="bg-gradient-to-b from-slate-50 to-cyan-200"></div>
     <!-- Header -->
 
-    <header class="bg-white flex justify-between items-center py-4">
-      <img src="./Public/clinicalogo.svg" alt="Logo de la empresa" class="w-100 h-100 ml-4" />
+    <header class="bg-white flex justify-between items-center py-full font-['Poppins']">
+      <img src="./Public/clinicalogo.svg" alt="Logo de la empresa" class="w-50 h-50 ml-4" />
       <nav>
         <ul class="flex justify-end">
           <li><a href="" class="mr-8">Inicio</a></li>
@@ -23,15 +26,19 @@
       </nav>
     </header>
 
+    <div class="absolute w-[388px] h-[388px] top-[602px] left-[-19px] rounded-full bg-rgba(177, 184, 184, 0.5) shadow-md shadow-rgba(177, 184, 184, 0.5)">
+      <!-- Contenido que deseas aplicar el efecto -->
+    </div>
+
     <!-- Main page-->
      
-    <div class="flex justify-center items-center h-screen">
+    <div class="flex justify-center items-center h-auto w-auto font-['Poppins']">
       <div class="flex justify-between w-3/4">
-        <div class="w-1/2 flex flex-col justify-center">
-          <h1 class="text-3xl font-bold mb-4">
+        <div class="w-1/2 flex flex-col justify-center mr-16">
+          <h1 class="text-3xl mb-4 text-[rgba(37,130,141,1)] font-bold leading-[49px] tracking-0 items-center">
             Clínica de Fracturas y Lesiones | Especialistas en Traumatología
           </h1>
-          <p class="text-lg">
+          <p class="text-lg ">
             ¿Buscas una clínica de fracturas y lesiones confiable y especializada?, contamos con un equipo de especialistas en traumatología altamente capacitados, comprometidos con la ética y el profesionalismo en cada tratamiento.
           </p>
         </div>
@@ -40,12 +47,17 @@
         </div>
       </div>
     </div>
+    <div class="flex justify-center text-3xl font-bold mb-4 text-[rgba(37,130,141,1)] font-['Poppins']">
+      <p>
+        Nuestros servicios
+      </p>
+    </div>
 
     <!-- Footer main page-->
     
-    <footer class="items-center py-4 bg-rgba(252, 252, 252, 1)">
+    <footer class="mt-auto items-center py-4 bg-[rgba(252,252,252,1)] font-['Poppins']">
       <nav class="flex justify-between">
-        <ul class="flex flex-wrap justify-around w-full">
+        <ul class="flex flex-wrap justify-around w-full font-light text-xs leading-4 tracking-0 text-center items-center">
           <li class="flex flex-col items-center mr-4">
             <img src="./Public/icono-footer.svg" alt="" class="w-8 h-8 mb-2" />
             <a href="">Consulta de traumatología y ortopedia</a>
@@ -71,61 +83,125 @@
     </footer>
 
 <!-- Testimonios -->
-<div class="flex justify-center items-center">
-  <div class="w-3/4 flex flex-col items-center">
-    <div class="flex justify-between items-center">
-      <div>
-        <h2>Testimonios</h2>
-        <p>¡Tu opinión importa!Cuéntanos cómo fue tu experiencia con nosotros. Tus comentarios nos ayudarán a seguir brindándote la mejor atención médica.</p>
+  <div class="flex justify-center items-center">
+    <div class="w-3/4 flex flex-col items-center">
+      <div class="flex justify-between items-center">
+        <div>
+          <h2 class="font-bold text-6xl leading-[49px] tracking-0 items-center text-[rgba(37,130,141,1)] font-['Poppins']">Testimonios</h2>
+          <p class="text-lg ">
+            ¡Tu opinión importa!Cuéntanos cómo fue tu experiencia con nosotros. Tus comentarios nos ayudarán a seguir brindándote la mejor atención médica.
+          </p>
+        </div>
+        <div class="w-1/2 flex justify-end mr-8">
+          <img src="./Public/v1.svg" alt="" class="w-full h-full object-cover">
+        </div>
       </div>
-      <div class="w-1/2 flex justify-end mr-8">
-        <img src="./Public/v1.svg" alt="" class="w-full h-full object-cover">
-      </div>
+      <nav class="mt-4">
+        <ul class="flex flex-wrap">
+          <li class="mr-4"><a href="">Comentarios</a></li>
+          <li class="mr-4"><a href="">Comentarios</a></li>
+          <li class="mr-4"><a href="">Comentarios</a></li>
+          <li class="mr-4"><a href="">Comentarios</a></li>
+          <li class="mr-4"><a href="">Comentarios</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="mt-4">
-      <ul class="flex flex-wrap">
-        <li class="mr-4"><a href="">Comentarios</a></li>
-        <li class="mr-4"><a href="">Comentarios</a></li>
-        <li class="mr-4"><a href="">Comentarios</a></li>
-        <li class="mr-4"><a href="">Comentarios</a></li>
-        <li class="mr-4"><a href="">Comentarios</a></li>
-      </ul>
-    </nav>
   </div>
-</div>
     <!-- Especialistas cerca de tu domicilio -->
 
     <!-- carrucel -->
-    <div class="relative w-full h-64 overflow-hidden">
-    <div class=class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-      <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="w-25 h-25 object-cover">
-      <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="w-25 h-25 object-cover hidden">
-      <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="w-25 h-25 object-cover hidden">
-      <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="w-25 h-25 object-cover hidden">
-      <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="w-25 h-25 object-cover hidden">
+<!-- <button class="w-8 h-8 rounded-full bg-black-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+</button>
+  <div>
+    <h2 class="flex justify-center font-bold text-6xl leading-[49px] tracking-0 items-center text-[rgba(37,130,141,1)] font-['Poppins']">Especialistas cerca de tu domicilio</h2>
+  </div>
+  <div class="relative w-full h-full">
+    <div class="top-0 left-0 w-full h-full flex justify-center items-center">
+      <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="">
+      <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="">
+      <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="">
+      <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="">
+      <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="">
     </div>
   </div>
+<button class="w-8 h-8 rounded-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+</button> -->
+
+<div class="relative w-full h-full">
+  <!-- <button class="absolute top-0 left-0 w-8 h-8 rounded-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" id="prev-button">1</button> -->
+  <!-- <div class="flex justify-center items-center overflow-x-hidden">
+    <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="w-full h-full object-cover">
+    <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="w-full h-full object-cover">
+    <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="w-full h-full object-cover">
+    <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="w-full h-full object-cover">
+    <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="w-full h-full object-cover">
+  </div> -->
+  
+  <!-- <div class="flex justify-center items-center overflow-x-hidden">
+    <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="w-full h-full object-cover scale-50">
+    <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="w-full h-full object-cover scale-50">
+    <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="w-full h-full object-cover scale-100">
+    <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="w-full h-full object-cover scale-50">
+    <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="w-full h-full object-cover scale-50">
+  </div> -->
+
+  <!-- <button class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="next-button">2</button>
+  </div> -->
+  <div class="relative w-full h-full">
+    <button class="absolute top-0 left-0 w-8 h-8 rounded-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" id="prev-button">1</button>
+    <div class="flex justify-center items-center overflow-x-hidden" id="carousel">
+      <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="w-full h-full object-cover scale-50" id="img-1">
+      <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="w-full h-full object-cover scale-50" id="img-2">
+      <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="w-full h-full object-cover scale-100" id="img-3">
+      <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="w-full h-full object-cover scale-50" id="img-4">
+      <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="w-full h-full object-cover scale-50" id="img-5">
+    </div>
+    <button class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="next-button">2</button>
+  </div>
+
+
     
     <!-- nuestra especialidad -->
-    <h2>
+  <div class="leading-tight">
+    <h2 class="font-bold text-6xl leading-[49px] tracking-0 text-right items-middle text-[rgba(37,130,141,1)] font-['Poppins']">
       Nuestra especialidad
     </h2>
     <p>
       Somos especialistas en traumatología, te brindamos tratamientos personalizados y accesibles. Guiados por la mejor atención médica basada en la ética y el profesionalismo. Contamos con beneficios exclusivos para nuestros pacientes como descuentos, convenios con seguros, consultas en inglés y más.¡Contáctanos y pregunta por nuestros beneficios!
     </p>
-    <h2>
-      Nuestra especialidad
-    </h2>
-    <h2>
-      Nuestra especialidad
-    </h2>
-    <h2>
-      Nuestra especialidad
-    </h2>
+  </div>
+
+  <div>
+    <div class="tracking-0 text-right items-center">
+      <h2 class="font-bold text-6xl leading-[49px] text-[rgba(37,130,141,1)] font-['Poppins']">
+        +287
+      </h2>
+      <p>
+        Cirugias al año
+      </p>
+    </div>
+    <div class="tracking-0 text-right items-center">
+      <h2 class="font-bold text-6xl leading-[49px] text-[rgba(37,130,141,1)] font-['Poppins']">
+        +591
+      </h2>
+      <p>
+        Urgencias traumatológicas
+      </p>
+    </div>
+    <div class="tracking-0 text-right items-center">
+      <h2 class="font-bold text-6xl leading-[49px] text-[rgba(37,130,141,1)] font-['Poppins']">
+        +98%
+      </h2>
+      <p>
+        Satisfacción de nuestros pacientes
+      </p>
+    </div>
+  </div>
 
 
     <!-- Footer Footer-->
-    <footer>
+  
+  <footer>
       <div>
         <img src="./Public/clinicalogo.svg" alt="Logo de la empresa" />
         <nav>
@@ -154,7 +230,10 @@
           </a>
         </section>
       </div>
-      <small> © 2024 C Traumatologia. Todos los derechos reservados. </small>
+      <small class="flex justify-center bg-[rgba(58,151,164,1)] text-white">
+        © 2024 C Traumatologia. Todos los derechos reservados. 
+      </small>
     </footer>
   </body>
 </html>
+
