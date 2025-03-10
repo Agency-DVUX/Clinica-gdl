@@ -8,18 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <script src="./js/script.js"></script>
   </head>
-  <body>
+  <body class="bg-gradient-to-b from-slate-50 to-sky-100">
+    
     <div class="bg-gradient-to-b from-slate-50 to-cyan-200"></div>
+    
     <!-- Header -->
 
-    <div class="absolute w-[346px] h-[346px] top-[100px] left-[1350px] rounded-full bg-[rgba(177,184,184,0.5)] blur-3xl z-0">
-    </div>
-
-    <header class="bg-white flex justify-between items-center py-full font-['Poppins'] mr-30 text-[17.32px] z-1">
+    <!-- <div class="absolute w-[346px] h-[346px] top-[100px] left-[1350px] rounded-full bg-[rgba(177,184,184,0.5)] blur-3xl z-0">
+    </div> -->
+    <!-- <header class="bg-white flex justify-between items-center py-full font-['Poppins'] mr-30 text-[17.32px] z-1"> -->
+  
+    <header class="bg-white border-b lg:fixed lg:w-full lg:top-0 lg:left-0 lg_right-0 flex justify-between items-center py-full font-['Poppins'] mr-30 text-[17.32px] z-2 ">
       <img src="./Public/clinicalogo.svg" alt="Logo de la empresa" class="w-251px h-169px " />
       <nav>
         <ul class="flex justify-end">
-          <li><a href="" class="mr-8 hover:text-[rgba(93,99,99,1)] ">Inicio</a></li>
+          <li><a href="" class="mr-8 hover:text-[rgba(93,99,99,1)] hover:underline">Inicio</a></li>
           <li><a href="" class="mr-8 hover:text-[rgba(93,99,99,1)] ">Servicios</a></li>
           <li><a href="" class="mr-8 hover:text-[rgba(93,99,99,1)] ">Testimonios</a></li>
           <li><a href="" class="mr-8 hover:text-[rgba(93,99,99,1)] ">Doctores</a></li>
@@ -120,38 +123,31 @@
   </p>
 </div>
 
-<div class="absolute w-[388px] h-[388px] top-[2000px] left-[-40px] rounded-full bg-[rgba(197,249,255,0.3)] blur-3xl z-0">
-</div>
+<!-- <div class="absolute w-[388px] h-[388px] top-[2000px] left-[-40px] rounded-full bg-[rgba(197,249,255,0.3)] blur-3xl z-0">
+</div> -->
 
     <!-- carrucel -->
 
-<div class="relative w-full h-full z-1">
-
+<div class="">
+  
   <div class="relative w-full h-full mt-5 z-1">
-    <button class="absolute top-0 left-0 w-8 h-8 rounded-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" id="prev-button">1</button>
-    <div class="flex justify-center items-center overflow-x-hidden " id="carousel">
-      <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="w-full h-full object-cover scale-75" id="img-2">
-      <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="w-full h-full object-cover scale-75" id="img-3">
-      <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="w-full h-full object-cover scale-100" id="img-1">
-      <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="w-full h-full object-cover scale-75" id="img-4">
-      <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="w-full h-full object-cover scale-75" id="img-5">
-    </div>
-    <button class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="next-button">2</button>
+    <button class="absolute top-0 left-0 w-8 h-8 rounded-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" id="prev-button">
+      1
+    </button>
+    <div class="flex justify-center items-center " id="carousel">
+      <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="  scale-75" id="img-2">
+      <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="scale-75" id="img-3">
+      <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class=" scale-100" id="img-1">
+      <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="  scale-75" id="img-4">
+      <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class=" scale-75" id="img-5">
   </div>
-  <!-- <div class="relative w-full h-full mt-5 z-1">
-    <button class="absolute top-0 left-0 w-8 h-8 rounded-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" id="prev-button">1</button>
-    <div class="flex justify-center items-center overflow-x-hidden " id="carousel">
-      <img src="./Public/carousel/Card-2.svg" alt="Lic. Ana García" class="absolute w-full h-full object-cover" style="left: 50%; transform: translateX(-50%);" id="img-2">
-      <img src="./Public/carousel/Card-3.svg" alt="Lic. Carlos López" class="absolute w-full h-full object-cover" style="left: 50%; transform: translateX(-50%) translateY(-50%);" id="img-3">
-      <img src="./Public/carousel/Card-1.svg" alt="Lic. Lizeth García" class="absolute w-full h-full object-cover" style="left: 50%; transform: translateX(-50%);" id="img-1">
-      <img src="./Public/carousel/Card-4.svg" alt="Lic. Alejandro Martínez" class="absolute w-full h-full object-cover" style="left: 50%; transform: translateX(-50%) translateY(-50%);" id="img-4">
-      <img src="./Public/carousel/Card-5.svg" alt="Lic. Isabel Rodríguez" class="absolute w-full h-full object-cover" style="left: 50%; transform: translateX(-50%);" id="img-5">
-    </div>
-    <button class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="next-button">2</button>
-  </div> -->
+  <button class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="next-button">
+    2
+  </button>
+</div>
 
 
-<div class="absolute w-[388px] h-[388px] top-[200px] left-[1280px] rounded-full bg-[rgba(177,184,184,0.5)] blur-3xl z-0">
+<div class="overflow-x-hidden w-[388px] h-[388px] top-[200px] left-[1280px] rounded-full bg-[rgba(177,184,184,0.5)] blur-3xl z-0">
 </div>
     
     <!-- nuestra especialidad -->
@@ -164,20 +160,20 @@
     </p>
   </div>
 
-  <div>
+  <div class="flex justify-end">
     <div class="tracking-0 text-right items-center">
-      <h2 class="font-bold text-6xl leading-[49px] text-[rgba(37,130,141,1)] font-['Poppins']">
+      <h2 class="flex justify-center items-center font-bold text-6xl leading-[49px] text-[rgba(37,130,141,1)] font-['Poppins']">
         +287
       </h2>
-      <p>
+      <p class="flex justify-center">
         Cirugias al año
       </p>
     </div>
     <div class="tracking-0 text-right items-center">
-      <h2 class="font-bold text-6xl leading-[49px] text-[rgba(37,130,141,1)] font-['Poppins']">
+      <h2 class="flex justify-center font-bold text-6xl leading-[49px] text-[rgba(37,130,141,1)] font-['Poppins']">
         +591
       </h2>
-      <p>
+      <p class="flex justify-center">
         Urgencias traumatológicas
       </p>
     </div>
@@ -195,17 +191,17 @@
     <!-- Footer Footer-->
   
   <footer>
-      <div>
+      <div class="flex justify-between items-center py-full font-['Poppins']"> 
         <img src="./Public/clinicalogo.svg" alt="Logo de la empresa" />
-        <nav>
-          <ul>
+        <nav class="font-['Poppins']">
+          <ul class="flex justify-center items-center">
             <li><a href="">Servicios</a></li>
             <li><a href="">Testimonios</a></li>
             <li><a href="">Doctores</a></li>
             <li><a href="">Quienes Somos</a></li>
           </ul>
         </nav>
-        <section class="redes-sociales">
+        <section class="flex justify-center items-center">
           <a href="https://x.com" target="_blank">
             <img src="./Public/twitter-xlogo.svg" alt="X" />
           </a>
