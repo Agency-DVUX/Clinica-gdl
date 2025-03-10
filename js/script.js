@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     images.forEach((image, index) => {
       if (index === currentIndex) {
         image.classList.add('scale-100');
-        image.classList.remove('scale-50');
+        image.classList.remove('scale-75');
       } else {
         image.classList.remove('scale-100');
-        image.classList.add('scale-50');
+        image.classList.add('scale-75');
       }
     });
   }  
