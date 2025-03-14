@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevButton = document.getElementById('prev-button');
   const nextButton = document.getElementById('next-button');
   const images = document.querySelectorAll('#carousel img');
+  const hamburger = document.getElementById('hamburger');
+  const navbarHamburger = document.getElementById('navbar-hamburger');
   
   let currentIndex = 2;
   
@@ -33,4 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }  
+
+  hamburger.addEventListener('click', () => {
+    navbarHamburger.classList.toggle('hidden');
+    hamburger.classList.toggle('bg-gray-100');
+    hamburger.classList.toggle('dark:bg-gray-700');
+  });
 });
